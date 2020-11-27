@@ -1,6 +1,6 @@
-baseurl: /tufte-jekyll
+baseurl: /bokane.github.io
 title: bo kane
-subtitle: Something
+subtitle: subtitle
 author: bo kane
 simple_search: http://google.com/search
 description: A Jekyll theme for content-rich sites
