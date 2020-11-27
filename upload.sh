@@ -1,9 +1,12 @@
 #!/bin/sh
+set -x
 
 git add .
 
-msg="\"Site updated at $(date "+%Y-%m-%d")\""
+d=$(date "+%Y-%m-%d")
 
-git commit -am $msg
+echo $d
+
+git commit -am "Site updated at $d"
 
 git push origin master
