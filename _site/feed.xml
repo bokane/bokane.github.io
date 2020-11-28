@@ -5,9 +5,23 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>http://0.0.0.0:4000/bokane.github.io/</link>
     <atom:link href="http://0.0.0.0:4000/bokane.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Nov 2020 16:35:26 -0500</pubDate>
-    <lastBuildDate>Fri, 27 Nov 2020 16:35:26 -0500</lastBuildDate>
+    <pubDate>Sat, 28 Nov 2020 11:10:48 -0500</pubDate>
+    <lastBuildDate>Sat, 28 Nov 2020 11:10:48 -0500</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>$NewPost</title>
+        <description>&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;This… is a work-in-progress.&lt;/span&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/bokane.github.io/articles/20/newpost</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/bokane.github.io/articles/20/newpost</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
     
       <item>
         <title>Foreword</title>
@@ -17,16 +31,16 @@
 
 &lt;p&gt;Maybe I invest the time in setting up a &lt;em&gt;de novo&lt;/em&gt; environment for Jekyll in a virtual machine, then copy the VM from location to location as needed? I start downloading VirtalBox, various Linux images, and get to work. On my ancient Mac Air, VirtualBox is depressingly slow. I start looking at more resource-lite Linux distros. Through Googling, I come across the concept of containerization. Ah, so this explains the hype around Docker and Kubernetes. After breezing through the official Docker tutorial, I run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker pull jekyll/jekyll&lt;/code&gt; to get the default Docker Jekyll image, and find another well-written &lt;a href=&quot;https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184&quot;&gt;tutorial&lt;/a&gt; on how to compile.&lt;/p&gt;
 
-&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_build.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_build.png&quot; /&gt;&lt;figcaption&gt;Docker building the site&lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;Time to serve up the site locally. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-w&lt;/code&gt; flag allows me to edit my posts in Markdown then refresh the site, so I can update in realtime.&lt;/p&gt;
 
-&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_serve.png&quot; /&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_serve.png&quot; /&gt;&lt;figcaption&gt;Site successfully served to localhost:4000&lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;The next task is to get my site up on Github Pages so I can make use of their free hosting. Pages dislikes some of the custom Liquid tags in this template, so I have to build the site then push it to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of my repository rather than having Github compile Jekyll directly. I’ll should write a script to automate this at some point but it’s not too burdensome for now.&lt;/p&gt;
+&lt;p&gt;The next task is to get my site up on Github Pages so I can make use of their free hosting. Pages dislikes some of the custom Liquid tags in this template, so I have to build the site then push it to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of my repository rather than having Github compile Jekyll directly. I’m writing a script to automate this at some point but it’s not too burdensome for now.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
+        <pubDate>Thu, 19 Nov 2020 00:00:00 -0500</pubDate>
         <link>http://0.0.0.0:4000/bokane.github.io/articles/20/foreword</link>
         <guid isPermaLink="true">http://0.0.0.0:4000/bokane.github.io/articles/20/foreword</guid>
         

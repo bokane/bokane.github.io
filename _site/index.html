@@ -54,7 +54,7 @@
     <!--- Header and nav template site-wide -->
 <header>
     <nav class="group">
-	<a href="/bokane.github.io/"><img class="badge" src="/bokane.github.io/assets/img/badge_1.png" alt="CH"></a>
+	<a href="/bokane.github.io/"><img class="badge" src="/bokane.github.io/assets/img/b_letter.png" alt="PBK"></a>
 	
 		
   	
@@ -66,7 +66,7 @@
   	
 		
 		    
-		      <a href="/bokane.github.io/page/">page</a>
+		      <a href="/bokane.github.io/sleep/">sleep</a>
 		    
 	    
   	
@@ -92,21 +92,30 @@
           
         <li class="listing">
           <hr class="slender">
+          <a href="/bokane.github.io/articles/20/newpost"><h3 class="contrast">$NewPost</h3></a>
+          <br><span class="smaller">November 26, 2020</span>  <br/>
+          <div><p><span class="newthought">This… is a work-in-progress.</span></p>
+
+</div> 
+        </li>
+          
+        <li class="listing">
+          <hr class="slender">
           <a href="/bokane.github.io/articles/20/foreword"><h3 class="contrast">Foreword</h3></a>
-          <br><span class="smaller">November 13, 2020</span>  <br/>
+          <br><span class="smaller">November 19, 2020</span>  <br/>
           <div><p><span class="newthought">It started with footnotes.</span>  As I thought about my first few blog ideas, I was excited at the prospect of typesetting posts with footnotes. Two of my favorite authors (Levine, Foster Wallace) happen to be prolific footnoters. Then I recalled the sidenote styling of <a href="https://www.gwern.net/index">Gwern</a>, and knew my blog wouldn’t be complete until I had it. Gwern has a wonderfully detailed section on how the site is constructed, which was my launching point for my own design. My first learning was about static site generators (Gwern uses Hakyll), and decided to go with the Jekyll ecosystem because I’m re-acquainting myself with Ruby for a project that I’m building with Rails. It just so happened someone ported <a href="https://github.com/edwardtufte/tufte-css">Tufte-CSS</a> to <a href="https://github.com/clayh53/tufte-jekyll">Jekyll</a>. I cloned the repository and ran <code class="language-plaintext highlighter-rouge">jekyll build</code>.</p>
 
 <p>The build fails, and the troubleshooting begins. I try switching Ruby versions first using RVM, then rbenv. Doesn’t work, and later I realize having multiple environment managers is probably an anti-pattern. Looks like it might be a gem versioning issue - uninstalling and reinstalling doesn’t work. I try on another machine entirely - I run into user vs. system install permissioning errors, no dice. This is when I recall I’m in the market for a new computer, so I’ll have to do this again in a few months. I also realize I have probably screwed up the environment for the aforementioned Rails project.</p>
 
 <p>Maybe I invest the time in setting up a <em>de novo</em> environment for Jekyll in a virtual machine, then copy the VM from location to location as needed? I start downloading VirtalBox, various Linux images, and get to work. On my ancient Mac Air, VirtualBox is depressingly slow. I start looking at more resource-lite Linux distros. Through Googling, I come across the concept of containerization. Ah, so this explains the hype around Docker and Kubernetes. After breezing through the official Docker tutorial, I run <code class="language-plaintext highlighter-rouge">docker pull jekyll/jekyll</code> to get the default Docker Jekyll image, and find another well-written <a href="https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184">tutorial</a> on how to compile.</p>
 
-<figure class="fullwidth"><img src="/bokane.github.io/assets/img/docker_jekyll_build.png" /><figcaption></figcaption></figure>
+<figure class="fullwidth"><img src="/bokane.github.io/assets/img/docker_jekyll_build.png" /><figcaption>Docker building the site</figcaption></figure>
 
 <p>Time to serve up the site locally. The <code class="language-plaintext highlighter-rouge">-w</code> flag allows me to edit my posts in Markdown then refresh the site, so I can update in realtime.</p>
 
-<figure class="fullwidth"><img src="/bokane.github.io/assets/img/docker_jekyll_serve.png" /><figcaption></figcaption></figure>
+<figure class="fullwidth"><img src="/bokane.github.io/assets/img/docker_jekyll_serve.png" /><figcaption>Site successfully served to localhost:4000</figcaption></figure>
 
-<p>The next task is to get my site up on Github Pages so I can make use of their free hosting. Pages dislikes some of the custom Liquid tags in this template, so I have to build the site then push it to a <code class="language-plaintext highlighter-rouge">gh-pages</code> branch of my repository rather than having Github compile Jekyll directly. I’ll should write a script to automate this at some point but it’s not too burdensome for now.</p>
+<p>The next task is to get my site up on Github Pages so I can make use of their free hosting. Pages dislikes some of the custom Liquid tags in this template, so I have to build the site then push it to a <code class="language-plaintext highlighter-rouge">gh-pages</code> branch of my repository rather than having Github compile Jekyll directly. I’m writing a script to automate this at some point but it’s not too burdensome for now.</p>
 
 </div> 
         </li>
