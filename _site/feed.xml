@@ -5,13 +5,38 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>http://0.0.0.0:4000/bokane.github.io/</link>
     <atom:link href="http://0.0.0.0:4000/bokane.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Nov 2020 11:10:48 -0500</pubDate>
-    <lastBuildDate>Sat, 28 Nov 2020 11:10:48 -0500</lastBuildDate>
+    <pubDate>Sat, 28 Nov 2020 21:36:28 -0500</pubDate>
+    <lastBuildDate>Sat, 28 Nov 2020 21:36:28 -0500</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
+        <title>Sleep</title>
+        <description>&lt;p&gt;Some steps I’ve taken to hack my sleeping patterns.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;preamble&quot;&gt;Preamble&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;I have come to fervently believe in the power of small changes.&lt;/span&gt;  Starting my career in the financial sphere, especially fixed income, I’ve long had an appreciation for the power of compounding interest. The gist is that as you earn interest on some initial principal amount, over time the interest earns interest too, causing the value of your investment (or debt!) to snowball. Even at relatively small nominal interest rates, frequent compounding results in huge long term returns.&lt;/p&gt;
+
+&lt;p&gt;Even though I understood this concept intellectually, in practice I haven’t done a great job applying it outside finance. Rather than focus on an easy 1% improvement, I’ve tended to try for a much harder 10-20% improvement. Changing your habits is &lt;strong&gt;hard&lt;/strong&gt;, and aiming ambitious outcome tends to result in failure the majority of the time for me. Psychologically this results in discouragement, which in turn makes me less likely to try again. For a concrete example, several months into the pandemic I noticed I was almost completely sedentary. I would go days without going outside, meaning my only physical activity was going from room to room. To remedy this, I told myself I would start jogging every day for at least 20 minutes. The next morning I get up, lace up my shoes, and hit the pavement. After maybe 5 minutes I’m out of breath and discouraged. I walk home dejected, and think about the failure for the rest of the day.&lt;/p&gt;
+
+&lt;p&gt;Enter tiny habits&lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;NPR’s Life Kit has a great episode on tiny habits &lt;a href=&quot;https://www.npr.org/2020/02/25/809256398/tiny-habits-are-the-key-to-behavioral-change&quot;&gt;here&lt;/a&gt;. The three key principles are (1) do the smallest version of the habit you want to build toward, (2) find a natural cue to start the habit (could be a time, place etc.), and (3) intentionally celebrating success, e.g. using words of affirmation or fist pumping in the air. As silly as it sounds, (3) is absolutely critical. &lt;/span&gt;. Rather than tell myself I’m going to jog for 20 minutes every day, I say I’m going to walk around the block just once.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 Nov 2020 00:00:00 -0500</pubDate>
+        <link>http://0.0.0.0:4000/bokane.github.io/articles/20/sleep</link>
+        <guid isPermaLink="true">http://0.0.0.0:4000/bokane.github.io/articles/20/sleep</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
         <title>$NewPost</title>
-        <description>&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;This… is a work-in-progress.&lt;/span&gt;&lt;/p&gt;
+        <description>&lt;p&gt;NEWPOST IN PROGRESS
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;This… is a work-in-progress.&lt;/span&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 26 Nov 2020 00:00:00 -0500</pubDate>
@@ -25,19 +50,24 @@
     
       <item>
         <title>Foreword</title>
-        <description>&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;It started with footnotes.&lt;/span&gt;  As I thought about my first few blog ideas, I was excited at the prospect of typesetting posts with footnotes. Two of my favorite authors (Levine, Foster Wallace) happen to be prolific footnoters. Then I recalled the sidenote styling of &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern&lt;/a&gt;, and knew my blog wouldn’t be complete until I had it. Gwern has a wonderfully detailed section on how the site is constructed, which was my launching point for my own design. My first learning was about static site generators (Gwern uses Hakyll), and decided to go with the Jekyll ecosystem because I’m re-acquainting myself with Ruby for a project that I’m building with Rails. It just so happened someone ported &lt;a href=&quot;https://github.com/edwardtufte/tufte-css&quot;&gt;Tufte-CSS&lt;/a&gt; to &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;Jekyll&lt;/a&gt;. I cloned the repository and ran &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;My first post ends up being a meta-post about setting up the blog.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;It started with footnotes.&lt;/span&gt;  As I thought about my first few blog ideas, I was excited at the prospect of typesetting posts with footnotes. A couple of my favorite authors (Matt Levine, David Foster Wallace) happen to be prolific footnoters. Then I recalled the sidenote styling of &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern&lt;/a&gt;, and knew my blog wouldn’t be complete until I had it. My writing style tends to be full of  Gwern has a wonderfully detailed section on how the site is constructed, which was my launching point for my own design. My first learning was about static site generators (Gwern uses Hakyll), and decided to go with the Jekyll ecosystem because I’m re-acquainting myself with Ruby for a project that I’m building with Rails. It just so happened someone ported &lt;a href=&quot;https://github.com/edwardtufte/tufte-css&quot;&gt;Tufte-CSS&lt;/a&gt; to &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;Jekyll&lt;/a&gt;. I cloned the repository and ran &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;The build fails, and the troubleshooting begins. I try switching Ruby versions first using RVM, then rbenv. Doesn’t work, and later I realize having multiple environment managers is probably an anti-pattern. Looks like it might be a gem versioning issue - uninstalling and reinstalling doesn’t work. I try on another machine entirely - I run into user vs. system install permissioning errors, no dice. This is when I recall I’m in the market for a new computer, so I’ll have to do this again in a few months. I also realize I have probably screwed up the environment for the aforementioned Rails project.&lt;/p&gt;
 
-&lt;p&gt;Maybe I invest the time in setting up a &lt;em&gt;de novo&lt;/em&gt; environment for Jekyll in a virtual machine, then copy the VM from location to location as needed? I start downloading VirtalBox, various Linux images, and get to work. On my ancient Mac Air, VirtualBox is depressingly slow. I start looking at more resource-lite Linux distros. Through Googling, I come across the concept of containerization. Ah, so this explains the hype around Docker and Kubernetes. After breezing through the official Docker tutorial, I run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker pull jekyll/jekyll&lt;/code&gt; to get the default Docker Jekyll image, and find another well-written &lt;a href=&quot;https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184&quot;&gt;tutorial&lt;/a&gt; on how to compile.&lt;/p&gt;
+&lt;p&gt;Maybe I invest the time in setting up a &lt;em&gt;de novo&lt;/em&gt; environment for Jekyll in a virtual machine, then copy the VM from location to location as needed? I start downloading VirtalBox, various Linux images, and get to work. On my ancient Mac Air, VirtualBox is depressingly slow. I start looking at more resource-lite Linux distros. Through Googling, I come across the concept of containerization, e.g. Docker or Kubernetes. After breezing through the official Docker tutorial, I run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker pull jekyll/jekyll&lt;/code&gt; to retrieve the default Docker Jekyll image, and find another well-written &lt;a href=&quot;https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184&quot;&gt;tutorial&lt;/a&gt; on how to compile.&lt;/p&gt;
 
-&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_build.png&quot; /&gt;&lt;figcaption&gt;Docker building the site&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_build.png&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;Time to serve up the site locally. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-w&lt;/code&gt; flag allows me to edit my posts in Markdown then refresh the site, so I can update in realtime.&lt;/p&gt;
+&lt;p&gt;Time to serve up the site locally. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-w&lt;/code&gt; flag allows me to edit my posts in Markdown then refresh the site, so I can update and observe the changes in realtime.&lt;/p&gt;
 
-&lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_serve.png&quot; /&gt;&lt;figcaption&gt;Site successfully served to localhost:4000&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_serve.png&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;The next task is to get my site up on Github Pages so I can make use of their free hosting. Pages dislikes some of the custom Liquid tags in this template, so I have to build the site then push it to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of my repository rather than having Github compile Jekyll directly. I’m writing a script to automate this at some point but it’s not too burdensome for now.&lt;/p&gt;
+&lt;p&gt;The next task is to get my site up on Github Pages to take advantage of Github’s free hosting. Pages dislikes some of the custom Liquid tags in this template; I have to build the site then push it to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of my repository rather than having Github build Jekyll directly. In the end it is well worth it for the sidenote tags.&lt;/p&gt;
+
+&lt;p&gt;Despite the greater than anticipated time investment in the technical aspects of setting up my blog, debugging is actually a lot more fun than I recall from my previous romps with programming in high school and college. I had also forgotten the endorphin rush when code compiles/builds correctly - it’s a great feeling!&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 19 Nov 2020 00:00:00 -0500</pubDate>
