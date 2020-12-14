@@ -381,6 +381,8 @@ hr.slender { border: 0; height: 1px; margin-top: 1.4rem; margin-bottom: 1.4rem; 
 
 .icon-html-five:before { content: "\eae4"; }
 
+.icon-goodreads:before { content: "\e900"; }
+
 /*-- End of Icomoon icon font section --*/
 
 /*# sourceMappingURL=tufte.css.map */
