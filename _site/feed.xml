@@ -5,8 +5,8 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/bokane.github.io/</link>
     <atom:link href="/bokane.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Dec 2020 20:12:26 -0500</pubDate>
-    <lastBuildDate>Sun, 13 Dec 2020 20:12:26 -0500</lastBuildDate>
+    <pubDate>Thu, 17 Dec 2020 13:49:08 -0500</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2020 13:49:08 -0500</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -27,6 +27,8 @@
 
 &lt;h2 id=&quot;set-and-setting&quot;&gt;Set and Setting&lt;/h2&gt;
 &lt;p&gt;To borrow a catchphrase from Timothy Leary, pre-sleep mind&lt;em&gt;set&lt;/em&gt; and the setting in which I go to sleep contain important variables.&lt;/p&gt;
+
+&lt;p&gt;This is a test line change.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 13 Dec 2020 00:00:00 -0500</pubDate>
