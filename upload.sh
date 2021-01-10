@@ -1,6 +1,4 @@
 #!/bin/sh
-set -x
-
 echo -e "\e[92mUpdating site..."
 
 git add .

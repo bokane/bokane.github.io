@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bo kane</title>
+    <title>Blog</title>
     <description>A Jekyll theme for content-rich sites</description>
     <link>/bokane.github.io/</link>
     <atom:link href="/bokane.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2020 13:49:08 -0500</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2020 13:49:08 -0500</lastBuildDate>
+    <pubDate>Sun, 10 Jan 2021 13:08:45 -0500</pubDate>
+    <lastBuildDate>Sun, 10 Jan 2021 13:08:45 -0500</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>FedAccount</title>
+        <description>&lt;p&gt;Kicking off the 2021 with a series of some public policies I’ve been thinking about, starting with FedAccount.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;American savings accounts are a ripoff.&lt;/span&gt;  Aggregating FDIC call report data on fees, the Center for Responsible Lending &lt;a href=&quot;https://www.responsiblelending.org/sites/default/files/nodes/files/research-publication/crl-overdraft-covid19-jun2019.pdf&quot;&gt;shows&lt;/a&gt; banks charged Americans ~$11.7 billion in overdraft fees alone in 2019, or roughly $35 per person. Because these fees typically result from low account balances, they disproportionately harm the poor and underbanked. Even setting aside what I consider predatory fee practices, the pricing is very underwhelming - per CreditKarma, the average APY for US savings accounts was just &lt;a href=&quot;https://www.creditkarma.com/savings/i/why-are-interest-rates-low-on-savings-accounts#:~:text=Interest%20rates%20on%20savings%20accounts,accounts%2C%20which%20might%20earn%20more.&quot;&gt;0.09%&lt;/a&gt; in February 2020.&lt;/p&gt;
+
+&lt;h2 id=&quot;one-problem-of-banking-in-a-nutshell&quot;&gt;One Problem of Banking in a Nutshell&lt;/h2&gt;
+&lt;p&gt;Banks make money by borrowing at a low interest rate and lending out at a higher interest rate. If they “borrow” from the money in your savings account, they’re paying you 0.09% APY while earning something in the ballpark of 3-4% on a mortgage or 25-30% on a credit card or personal unsecured loan and pocketing the difference. They can also borrow from our central bank, the Federal Reserve, at a rate (colloquially, “Fed Funds”) determined by the Fed’s Board of Governors. This rate fluctuates within a set range; as of February 2020 the effective rate was roughly &lt;a href=&quot;https://fred.stlouisfed.org/series/FEDFUNDS&quot;&gt;1.58%&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Yields are difficult to grok for most people because we’re used to thinking in dollar terms, so I’ll use an analogy with prices. Let’s say banks were in the business of buying used cars. If the cheapest guaranteed price for a bank to buy a used car was from the government (Federal Reserve) at a price of $1,580, why would consumers in a competitive market sell their used car to a bank for $90? Why shouldn’t the price deposit consumers charge for their cars be something closer to $1,579?&lt;/p&gt;
+
+&lt;p&gt;I don’t have a great answer to that question&lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Itmar Dreschler at Wharton has done some work on this subject. &lt;a href=&quot;https://knowledge.wharton.upenn.edu/article/bank-deposits-monetary-policy/&quot;&gt;Here&lt;/a&gt; is a fairly accessible podcast episode (with transcript) on his work. &lt;/span&gt;. Spitballing, Fed money is easier and cheaper for banks to access than deposits (and doesn’t come with the marketing cost of acquiring customers), so intuitively it makes sense that equilibrium pricing for deposits falls at &lt;em&gt;some&lt;/em&gt; discount to the effective Fed Funds rate. The magnitude of difference between the two remains suspicious nonetheless. The situation has begun to shift more in favor of consumers with the advent of online banks (think Ally, or Marcus by Goldman Sachs). The predominant narrative is that online banks’ lack of “brick and mortar” presence allows them to pass on cost savings to consumers.&lt;/p&gt;
+
+&lt;p&gt;It’s not hard to illustrate the impact on consumers. There were roughly $&lt;a href=&quot;https://fred.stlouisfed.org/series/USAFCLODCHXDC&quot;&gt;10 trillion&lt;/a&gt;&lt;label for=&quot;2&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;2&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Plug to an r/Economics discussion thread for pointing me in the right direction! I had difficulty finding a consumer number broken out from business deposits. &lt;/span&gt; of consumer deposits in 2019, implying banks are able to capture an incremental ~$150 billion of cost savings annually from price gouging deposit holders. Adding in overdraft fees, this represents roughly &lt;strong&gt;18% of the stimulus Trump signed&lt;/strong&gt;, but every year in perpetuity, rather than as a one-off.&lt;label for=&quot;3&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;3&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;This number is significantly higher now as consumers heightened their savings rate in 2020. &lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;enter-fedaccount&quot;&gt;Enter FedAccount&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://greatdemocracyinitiative.org/document/central-banking-for-all/&quot;&gt;FedAccount&lt;/a&gt; is a policy proposal that seeks to eliminate the delta between the Fed Funds rate and the rate offered on savings accounts by offering everyone an account at the Federal Reserve. Summary of key differences between FedAccounts and your typical savings account:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;(1) &lt;strong&gt;No fees or minimum balances.&lt;/strong&gt; Eliminate silly fees like overdrafts and the need for minimum balances. This should encourage more people to participate in the financial system, and chip away at under- or un-banked populations.&lt;/li&gt;
+  &lt;li&gt;(2) &lt;strong&gt;Interest set at prevailing Fed Funds rate.&lt;/strong&gt; Deposit holders get the full benefit of the federal funds rate rather than non-competitive APYs. This will force banks to be more competitive on pricing, fees, and general customer experience.&lt;/li&gt;
+  &lt;li&gt;(3) &lt;strong&gt;Real time payments.&lt;/strong&gt; Just like banks are able to move money between themselves instantaneously, consumers and businesses would have the same luxury.  Gone are the days of waiting for cash in flight to settle, or having to pay extra to expedite a money movement.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;While the above represent concrete benefits of the policy to consumers, there are abstract notions to consider as well. Governments of financialized Western economies have proven themselves particularly susceptible to private corporate interests. Populist responses (Trump in the U.S., Johnson in the U.K., Le Pen in France etc.) to the uneven distribution of wealth captured by these Western “liberaltarian” elites have underscored the need for financial enfranchisement of the middle and lower classes. FedAccounts ensure universal access to banking and allow (parts of) monetary policy to be diverted consumers rather than captured by banks and asset owners.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;(1) &lt;strong&gt;&lt;a href=&quot;https://www.bankrate.com/&quot;&gt;Bankrate&lt;/a&gt;&lt;/strong&gt; Great tool to see how your savings APY stacks up against competitors.&lt;/li&gt;
+  &lt;li&gt;(2) &lt;strong&gt;&lt;a href=&quot;https://www.consumerfinance.gov/complaint/&quot;&gt;CFPB Complaints&lt;/a&gt;&lt;/strong&gt; The Consumer Financial Protection Bureau has a very easy-to-use complaints portal. I used this to file a complaint against what I thought were misleading CD terms. Not only did my bank respond quickly, but they actually re-wrote the CD terms on their website.&lt;/li&gt;
+  &lt;li&gt;(3) &lt;strong&gt;&lt;a href=&quot;https://democracy.io/#!/&quot;&gt;Democracy.io&lt;/a&gt;&lt;/strong&gt; Write your representatives to tell them about this policy proposal!&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Sun, 10 Jan 2021 00:00:00 -0500</pubDate>
+        <link>/bokane.github.io/articles/21/fedaccount</link>
+        <guid isPermaLink="true">/bokane.github.io/articles/21/fedaccount</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
     
       <item>
         <title>Sleep</title>
@@ -23,12 +66,21 @@
 &lt;h2 id=&quot;sleep-apnea&quot;&gt;Sleep Apnea&lt;/h2&gt;
 &lt;p&gt;Having been told I was a snorer, I signed up for an overnight sleep study at a clinic. Following the study I was diagnosed with moderate obstructive sleep apnea, with an AHI &lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;AHI stands for Apnea-Hypopnea Index, which measures the number of times your breathing pauses for &amp;gt;10 seconds during sleep. Apnea events often result in brief arousals, breaking the continuity of sleep &lt;/span&gt; of 17. I was prescribed a CPAP &lt;label for=&quot;2&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;2&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;CPAP stands for continuous positive airway pressure &lt;/span&gt; machine, which I’ve used nightly ever since. The CPAP forces air through my nose at a pressure level that automatically adjusts to my breathing throughout the night.&lt;/p&gt;
 
-&lt;p&gt;Although I’ve been on this course of treatment for nearly twelve months as I write this, I can’t say it’s been particularly effective at improving the quality or duration of my sleep. I think a part of this may have to do with the fact that CPAP alone didn’t really address my sleep anxiety, which is the biggest driver of sleep duration, which in turn&lt;/p&gt;
+&lt;p&gt;Although I’ve been on this course of treatment for nearly twelve months as I write this, I can’t say it’s been particularly effective at improving the quality or duration of my sleep. I think a part of this may have to do with the fact that CPAP alone didn’t really address my sleep anxiety, which is the biggest driver of sleep duration for me. There are of course other health benefits of correcting my apnea, and I’ve grown accustomed to sleeping with the mask so at this point it continues to be a lesser part of my sleep routine.&lt;/p&gt;
 
-&lt;h2 id=&quot;set-and-setting&quot;&gt;Set and Setting&lt;/h2&gt;
-&lt;p&gt;To borrow a catchphrase from Timothy Leary, pre-sleep mind&lt;em&gt;set&lt;/em&gt; and the setting in which I go to sleep contain important variables.&lt;/p&gt;
+&lt;h2 id=&quot;set-and-setting&quot;&gt;‘Set and Setting&lt;/h2&gt;
+&lt;p&gt;Pre-sleep mindset and the setting in which I go to sleep contain important variables.&lt;/p&gt;
 
-&lt;p&gt;This is a test line change.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;(1) &lt;strong&gt;Temperature.&lt;/strong&gt; Cold is gold - in cooler months I sleep with a window open, otherwise with a fan and AC.&lt;/li&gt;
+  &lt;li&gt;(2) &lt;strong&gt;Environmental stimulation.&lt;/strong&gt; I get easily distracted, so I aim for complete sensory deprivation. In practice wearing a sleep mask and ear plugs are effective, especially when I was living above the hustle and bustle of Manhattan.&lt;/li&gt;
+  &lt;li&gt;(3) &lt;strong&gt;Light.&lt;/strong&gt; I’ve noticed my ability to fall asleep is very light sensitive. Wearing a mask helps reduce the impact while trying to sleep, but it’s important to manage as an environmental variable before sleep and immediately upon waking up. The &lt;strong&gt;&lt;em&gt;single most important&lt;/em&gt;&lt;/strong&gt; factor I’ve come across is using a full spectrum lamp when I first wake up. This has been a complete game-changer, but it took a while to adjust my Circadian rhythm before I felt a noticeable effect. I currently use &lt;a href=&quot;https://www.amazon.com/gp/product/B00PCN4UVU/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;amp;psc=1&quot;&gt;this&lt;/a&gt; lamp I found off Amazon &lt;label for=&quot;3&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;3&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Wirecutter has a good &lt;a href=&quot;https://www.nytimes.com/wirecutter/reviews/best-light-therapy-lamp/&quot;&gt;overview&lt;/a&gt; of lamps, including references to medical literature. It seems like one of the most important factors is achieving an output of 10,000 lux. &lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;some-other-findings&quot;&gt;Some Other Findings&lt;/h2&gt;
+&lt;p&gt;Another obvious factor is caffeine. Though I’m not a big coffee drinker, I’m fond of black and green teas, and also sugar-free energy drinks (my favorite breakfast is a sugar-free Red Bull, a cup of yogurt or skyr, and an apple or handful of blueberries). Although I don’t think I feel the effects of caffeine more acutely than other people, it does seem to last a longer time in my body. I try to avoid consuming anything with caffeine after noon to avoid interfering with my sleep. Same goes for other stimulants.&lt;/p&gt;
+
+&lt;p&gt;Depressants are another matter. I’ve found both alcohol and THC make it easier to go to sleep, though for me sleep-inducing effects start to wane after an hour or so. If I’m trying to use one of those substances specifically for sleep I try to time it 30 minutes before my goal sleep time. TL;DR - personal drug titration is important!&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 13 Dec 2020 00:00:00 -0500</pubDate>
@@ -76,7 +128,7 @@
         <description>&lt;p&gt;My first post ends up being a meta-post about setting up the blog.
 &lt;!--more--&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;It started with footnotes.&lt;/span&gt;  As I thought about my first few blog ideas, I was excited at the prospect of typesetting posts with footnotes. A couple of my favorite authors (Matt Levine, David Foster Wallace) happen to be prolific footnoters. Then I recalled the sidenote styling of &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern&lt;/a&gt;, and knew my blog wouldn’t be complete until I had it. My writing style tends to be full of  Gwern has a wonderfully detailed section on how the site is constructed, which was my launching point for my own design. My first learning was about static site generators (Gwern uses Hakyll), and decided to go with the Jekyll ecosystem because I’m re-acquainting myself with Ruby for a project that I’m building with Rails. It just so happened someone ported &lt;a href=&quot;https://github.com/edwardtufte/tufte-css&quot;&gt;Tufte-CSS&lt;/a&gt; to &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;Jekyll&lt;/a&gt;. I cloned the repository and ran &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;It started with footnotes.&lt;/span&gt;  As I thought about my first few blog ideas, I became obsessed about typesetting posts with footnotes. A couple of my favorite authors (Matt Levine, David Foster Wallace) happen to be prolific footnoters. Then I recalled the sidenote styling of &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern&lt;/a&gt;, and knew my blog wouldn’t be complete until I had it. Gwern has a wonderfully detailed section on how the site is constructed, which was the launching point for my own design. My first learning was about static site generators (Gwern uses Hakyll), and decided to go with the Jekyll ecosystem because I’m re-acquainting myself with Ruby for a project that I’m building with Rails. It just so happened someone ported &lt;a href=&quot;https://github.com/edwardtufte/tufte-css&quot;&gt;Tufte-CSS&lt;/a&gt; to &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;Jekyll&lt;/a&gt;. I cloned the repository and ran &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;The build fails, and the troubleshooting begins. I try switching Ruby versions first using RVM, then rbenv. Doesn’t work, and later I realize having multiple environment managers is probably an anti-pattern. Looks like it might be a gem versioning issue - uninstalling and reinstalling doesn’t work. I try on another machine entirely - I run into user vs. system install permissioning errors, no dice. This is when I recall I’m in the market for a new computer, so I’ll have to do this again in a few months. I also realize I have probably screwed up the environment for the aforementioned Rails project.&lt;/p&gt;
 
@@ -88,7 +140,7 @@
 
 &lt;figure&gt;&lt;img src=&quot;/bokane.github.io/assets/img/docker_jekyll_serve.png&quot; /&gt;&lt;figcaption class=&quot;maincolumn-figure&quot;&gt;&lt;/figcaption&gt;&lt;/figure&gt;
 
-&lt;p&gt;The next task is to get my site up on Github Pages to take advantage of Github’s free hosting. Pages dislikes some of the custom Liquid tags in this template; I have to build the site then push it to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of my repository rather than having Github build Jekyll directly. In the end it is well worth it for the sidenote tags.&lt;/p&gt;
+&lt;p&gt;The next task is to get my site up on Github Pages to take advantage of Github’s free hosting. Pages dislikes some of the custom Liquid tags in this template; I have to build the site then push it to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch of my repository rather than having Github build Jekyll directly. In the end it is well worth it for the sidenote tags.&lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;12/30 update: I wrote a script to automate this tedious task. See upload.sh in the blog repo for details. &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Despite the greater than anticipated time investment in the technical aspects of setting up my blog, debugging is actually a lot more fun than I recall from my previous romps with programming in high school and college. I had also forgotten the endorphin rush when code compiles/builds correctly - it’s a great feeling!&lt;/p&gt;
 

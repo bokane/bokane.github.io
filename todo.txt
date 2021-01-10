@@ -1,0 +1,4 @@
+Add an embedded map
+  -https://github.com/ayastreb/jekyll-maps (gem repo w/ instructions)
+  -https://mapstyle.withgoogle.com/ (for map styling to pass as arg)
+
