@@ -7,4 +7,11 @@ Please feel free to contact me via email: [bo@bokane.net](mailto:bo@bokane.net).
 
 The views and opinions expressed in this blog are my own and do not necessarily reflect those of my employer.
 
+<br/>
+
+{% google_map latitude="36.103305352163595" longitude="-80.28969700485865" show_marker="false" zoom="10"%}
+
+
+
+
 

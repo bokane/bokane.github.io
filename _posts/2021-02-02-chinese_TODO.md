@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  New Characters
-date:   2021-02-01
+date:   2021-02-02
 categories: posts
 ---
 How new Chinese characters get made
