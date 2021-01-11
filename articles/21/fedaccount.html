@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FedAccount</title>
+  <meta name="description" content="Kicking off the 2021 with a series of some public policies I’ve been thinking about, starting with FedAccount.">
+
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  
+
+  <link rel="stylesheet" type="text/css" href="/bokane.github.io/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/bokane.github.io/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="http://0.0.0.0:4000/bokane.github.io/articles/21/fedaccount">
+
+  <link rel="alternate" type="application/rss+xml" title="Blog" href="http://0.0.0.0:4000/bokane.github.io/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/bokane.github.io/"><img class="badge" src="/bokane.github.io/assets/img/b_letter.png" alt="PBK"></a>
+	
+		
+  	
+		
+		    
+		      <a href="/bokane.github.io/">Blog</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/bokane.github.io/about/">say hi</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/bokane.github.io/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>FedAccount</h1>
+<p class="subtitle">January 10, 2021</p>
+
+<p>Kicking off the 2021 with a series of some public policies I’ve been thinking about, starting with FedAccount.
+<!--more--></p>
+
+<p><span class="newthought">American savings accounts are a ripoff.</span>  Aggregating FDIC call report data on fees, the Center for Responsible Lending <a href="https://www.responsiblelending.org/sites/default/files/nodes/files/research-publication/crl-overdraft-covid19-jun2019.pdf">shows</a> banks charged Americans ~$11.7 billion in overdraft fees alone in 2019, or roughly $35 per person. Because these fees typically result from low account balances, they disproportionately harm the poor and underbanked. Even setting aside what I consider predatory fee practices, the pricing is very underwhelming - per CreditKarma, the average APY for US savings accounts was just <a href="https://www.creditkarma.com/savings/i/why-are-interest-rates-low-on-savings-accounts#:~:text=Interest%20rates%20on%20savings%20accounts,accounts%2C%20which%20might%20earn%20more.">0.09%</a> in February 2020.</p>
+
+<h2 id="one-problem-of-banking-in-a-nutshell">One Problem of Banking in a Nutshell</h2>
+<p>Banks make money by borrowing at a low interest rate and lending out at a higher interest rate. If they “borrow” from the money in your savings account, they’re paying you 0.09% APY while earning something in the ballpark of 3-4% on a mortgage or 25-30% on a credit card or personal unsecured loan and pocketing the difference. They can also borrow from our central bank, the Federal Reserve, at a rate (colloquially, “Fed Funds”) determined by the Fed’s Board of Governors. This rate fluctuates within a set range; as of February 2020 the effective rate was roughly <a href="https://fred.stlouisfed.org/series/FEDFUNDS">1.58%</a>.</p>
+
+<p>Yields are difficult to grok for most people because we’re used to thinking in dollar terms, so I’ll use an analogy with prices. Let’s say banks were in the business of buying used cars. If the cheapest guaranteed price for a bank to buy a used car was from the government (Federal Reserve) at a price of $1,580, why would consumers in a competitive market sell their used car to a bank for $90? Why shouldn’t the price deposit consumers charge for their cars be something closer to $1,579?</p>
+
+<p>I don’t have a great answer to that question<label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle" /><span class="sidenote">Itmar Dreschler at Wharton has done some work on this subject. <a href="https://knowledge.wharton.upenn.edu/article/bank-deposits-monetary-policy/">Here</a> is a fairly accessible podcast episode (with transcript) on his work. </span>. Spitballing, Fed money is easier and cheaper for banks to access than deposits (and doesn’t come with the marketing cost of acquiring customers), so intuitively it makes sense that equilibrium pricing for deposits falls at <em>some</em> discount to the effective Fed Funds rate. The magnitude of difference between the two remains suspicious nonetheless. The situation has begun to shift more in favor of consumers with the advent of online banks (think Ally, or Marcus by Goldman Sachs). The predominant narrative is that online banks’ lack of “brick and mortar” presence allows them to pass on cost savings to consumers.</p>
+
+<p>It’s not hard to illustrate the impact on consumers. There were roughly $<a href="https://fred.stlouisfed.org/series/USAFCLODCHXDC">10 trillion</a><label for="2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="2" class="margin-toggle" /><span class="sidenote">Plug to an r/Economics discussion thread for pointing me in the right direction! I had difficulty finding a consumer number broken out from business deposits. </span> of consumer deposits in 2019, implying banks are able to capture an incremental ~$150 billion of cost savings annually from price gouging deposit holders. Adding in overdraft fees, this represents roughly <strong>18% of the stimulus Trump signed</strong>, but every year in perpetuity, rather than as a one-off.<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle" /><span class="sidenote">This number is significantly higher now as consumers heightened their savings rate in 2020. </span></p>
+
+<h2 id="enter-fedaccount">Enter FedAccount</h2>
+<p><a href="https://greatdemocracyinitiative.org/document/central-banking-for-all/">FedAccount</a> is a policy proposal that seeks to eliminate the delta between the Fed Funds rate and the rate offered on savings accounts by offering everyone an account at the Federal Reserve. Summary of key differences between FedAccounts and your typical savings account:</p>
+<ol>
+  <li>(1) <strong>No fees or minimum balances.</strong> Eliminate silly fees like overdrafts and the need for minimum balances. This should encourage more people to participate in the financial system, and chip away at under- or un-banked populations.</li>
+  <li>(2) <strong>Interest set at prevailing Fed Funds rate.</strong> Deposit holders get the full benefit of the federal funds rate rather than non-competitive APYs. This will force banks to be more competitive on pricing, fees, and general customer experience.</li>
+  <li>(3) <strong>Real time payments.</strong> Just like banks are able to move money between themselves instantaneously, consumers and businesses would have the same luxury.  Gone are the days of waiting for cash in flight to settle, or having to pay extra to expedite a money movement.</li>
+</ol>
+
+<p>While the above represent concrete benefits of the policy to consumers, there are abstract notions to consider as well. Governments of financialized Western economies have proven themselves particularly susceptible to private corporate interests. Populist responses (Trump in the U.S., Johnson in the U.K., Le Pen in France etc.) to the uneven distribution of wealth captured by these Western “liberaltarian” elites have underscored the need for financial enfranchisement of the middle and lower classes. FedAccounts ensure universal access to banking and allow (parts of) monetary policy to be diverted consumers rather than captured by banks and asset owners.</p>
+
+<h2 id="resources">Resources</h2>
+<ol>
+  <li>(1) <strong><a href="https://www.bankrate.com/">Bankrate</a></strong> Great tool to see how your savings APY stacks up against competitors.</li>
+  <li>(2) <strong><a href="https://www.consumerfinance.gov/complaint/">CFPB Complaints</a></strong> The Consumer Financial Protection Bureau has a very easy-to-use complaints portal. I used this to file a complaint against what I thought were misleading CD terms. Not only did my bank respond quickly, but they actually re-wrote the CD terms on their website.</li>
+  <li>(3) <strong><a href="https://democracy.io/#!/">Democracy.io</a></strong> Write your representatives to tell them about this policy proposal!</li>
+</ol>
+
+
+
+
+    </article>
+    <span class="print-footer">FedAccount - January 10, 2021 - bo kane</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:bo@bokane.net"><span class="icon-mail3"></span></a></li>    
+    
+      <li>
+        <a href="//github.com/bokane"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="//linkedin.com/in/bo-kane-99bb4796/"><span class="icon-linkedin"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+<!-- <span>&copy; 2021 &nbsp;&nbsp;bo kane</span></br> <br> -->
+</div>  
+</footer>
+  </body>
+</html>
